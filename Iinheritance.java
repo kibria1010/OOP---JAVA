@@ -1,5 +1,9 @@
 package oop;
 
+/**
+ * Inheritance is one of the key features of OOP that allows us to create a new class from an existing class.
+ */
+
 public class Iinheritance {
     
     public static void main(String[] args) {
@@ -62,11 +66,10 @@ class Toyota extends Car {
 }
 
 /*
-Inheritance:
-    Inheritance in Java is a key object-oriented programming concept that allows
-    a class (called a subclass or derived class) to inherit fields and methods
-    from another class (called a superclass or base class). 
-    This enables code reusability, supports polymorphism, and establishes a hierarchical relationship between classes.
+Inheritance in Java is a key object-oriented programming concept that allows
+a class (called a subclass or derived class) to inherit fields and methods
+from another class (called a superclass or base class). 
+This enables code reusability, supports polymorphism, and establishes a hierarchical relationship between classes.
 
 Types of Inheritance:
     Java supports the following types of inheritance:
