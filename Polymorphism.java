@@ -1,7 +1,8 @@
 package oop;
 
 /**
- * Polymorphism is an important concept in Java that allows objects to be treated as instances of their superclass, enabling multiple forms of behavior based on the object's actual type.
+ * Polymorphism is an important concept in Java that allows objects to be treated as instances of their superclass, 
+ * enabling multiple forms of behavior based on the object's actual type.
 */
 
 public class Polymorphism {
