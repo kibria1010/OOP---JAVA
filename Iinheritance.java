@@ -1,8 +1,8 @@
 package oop;
 
-/**
- * Inheritance is one of the key features of OOP that allows us to create a new class from an existing class.
- */
+/*
+Inheritance is one of the key features of OOP that allows us to create a new class from an existing class.
+*/
 
 public class Iinheritance {
     

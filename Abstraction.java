@@ -1,12 +1,12 @@
 package oop;
+/*
+Abstraction in Java is an object-oriented programming concept that focuses on 
+hiding complex implementation details and exposing only the necessary features of an object. 
 
-/**
- * Abstraction in Java is an object-oriented programming concept that focuses on
- * hiding complex implementation details and exposing only the necessary
- * features of an object. It allows developers to focus on 'what' an object does
- * rather than 'how' it does it. This is achieved in Java using abstract classes
- * and interfaces.
- */
+    -It allows developers to focus on 'what' an object does rather than 'how' it does it. 
+    -This is achieved in Java using abstract classes and interfaces.
+
+*/
 public class Abstraction {
 
     public static void main(String[] args) {

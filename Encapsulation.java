@@ -1,11 +1,15 @@
 package oop;
 
-/**
- * Encapsulation is a way to restrict the direct access to some components of an
- * object, so users cannot access state values for all of the variables of a
- * particular object. Encapsulation can be used to hide both data members and
- * data functions or methods associated with an instantiated class or object.
- */
+/*
+Encapsulation is a way to restrict the direct access to some components of an object, 
+so users cannot access state values for all of the variables of a particular object.
+
+    -Encapsulation is the bundling of data (attributes) and methods (functions) that operate on the data into a single unit called a class.
+    -It restricts direct access to certain details of an object, hiding its internal structure from the outside world.
+    -Access to the data is provided through public methods, known as "getters" and "setters."
+    -This helps to protect the integrity of the data and enables modular, maintainable code.
+*/
+
 public class Encapsulation {
 
     public static void main(String[] args) {
