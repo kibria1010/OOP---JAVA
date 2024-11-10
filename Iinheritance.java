@@ -13,7 +13,8 @@ public class Iinheritance {
     }
 }
 
-class Vehicle {
+// super class named Vehicle
+class Vehicle { 
 
     int maxSpeed = 120;
     String name;
@@ -27,21 +28,22 @@ class Vehicle {
     }
 }
 
+// child class named Car
 class Car extends Vehicle {
 
     int maxSpeed = 180;
 
     public Car(String name) {
-        super(name);
+        super(name);             // Invoking super class constructor as the first statement is mandatory.
     }
 
     void display() {
-        System.out.println("Max Speed: " + maxSpeed); // Subclass maxSpeed
+        System.out.println("Max Speed: " + maxSpeed);               // Subclass maxSpeed
         System.out.println("Vehicle Max Speed: " + super.maxSpeed); // Superclass maxSpeed
     }
 
     void start() {
-        super.start();
+        super.start();          
         System.out.println("Car starts");
     }
 }
@@ -55,12 +57,12 @@ class Toyota extends Car {
 
     @Override
     void display() {
-        super.display(); //To change body of generated methods, choose Tools | Templates.
+        super.display(); 
     }
 
     @Override
     void start() {
-        super.start(); //To change body of generated methods, choose Tools | Templates.
+        super.start(); 
     }
 
 }
