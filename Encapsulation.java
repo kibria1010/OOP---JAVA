@@ -22,17 +22,16 @@ public class Encapsulation {
 }
 
 class BankAccount {
-    // Private fields
+    // Private fields are going to be restricted to direct access from all other classes
     private String accountNumber;
     private double balance;
 
-    // Constructor
     public BankAccount(String accountNumber, double initialBalance) {
         this.accountNumber = accountNumber;
         this.balance = initialBalance;
     }
 
-    // Getter and Setter methods
+    // Providing public interface to manipulate restricted fields by 'Getter and Setter' methods.
     public String getAccountNumber() {
         return accountNumber;
     }
