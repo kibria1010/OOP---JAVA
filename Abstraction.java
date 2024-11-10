@@ -11,10 +11,18 @@ public class Abstraction {
 
     public static void main(String[] args) {
         Employee s = new Student(1000);
-        s.calculateSalary(100);
+        s.calculateSalary(500);
+        
+        //--------
+        
+        Circle2 myCircle = new Circle2(5.0);
+        Rectangle2 myRectangle = new Rectangle2(4.0, 6.0);
+        System.out.println("Area of Circle: " + myCircle.calculateArea());
+        System.out.println("Area of Rectangle: " + myRectangle.calculateArea());
     }
 }
 
+//--------------example with interface named Employee
 abstract class Employee {
 
     int workingHour, salary;
@@ -41,4 +49,40 @@ class Student extends Employee {
         super.displaySalary();
     }
 
+}
+
+//--------------example with interface named Shape2
+interface Shape2 {
+    double calculateArea(); // Abstract method for
+                            // calculating the area
+}
+
+// Implement the interface in a class named Circle
+class Circle2 implements Shape2 {
+    private double radius;
+
+    public Circle2(double radius) { this.radius = radius; }
+
+    @Override
+    public double calculateArea()
+    {
+        return Math.PI * radius * radius;
+    }
+}
+
+class Rectangle2 implements Shape2 {
+    private double length;
+    private double width;
+
+    // Constructor for Rectangle
+    public Rectangle2(double length, double width)
+    {
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    public double calculateArea() { 
+        return length * width; 
+    }
 }
