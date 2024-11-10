@@ -22,7 +22,7 @@ public class Abstraction {
     }
 }
 
-//--------------example with interface named Employee
+//--------------example with abstract class named Employee
 abstract class Employee {
 
     int workingHour, salary;
