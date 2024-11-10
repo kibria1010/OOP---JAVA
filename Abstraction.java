@@ -36,6 +36,7 @@ abstract class Employee {
     abstract void calculateSalary(int paymentPerHour); // // Abstract method for calculateSalary
 }
 
+// Implement the abstract class in a class named Student
 class Student extends Employee {
 
     public Student(int workingHour) {
@@ -51,10 +52,11 @@ class Student extends Employee {
 
 //--------------example with interface named Shape2
 interface Shape2 {
-    double calculateArea(); // Abstract method for calculating the area
+    
+    double calculateArea();  // Abstract method for calculating the area
 }
 
-// Implement the interface in a class named Circle
+// Implement the interface in a class named Circle2
 class Circle2 implements Shape2 {
     private double radius;
 
@@ -67,13 +69,12 @@ class Circle2 implements Shape2 {
     }
 }
 
+// Implement the interface in a class named Rectangle2
 class Rectangle2 implements Shape2 {
     private double length;
     private double width;
 
-    // Constructor for Rectangle
-    public Rectangle2(double length, double width)
-    {
+    public Rectangle2(double length, double width) {
         this.length = length;
         this.width = width;
     }
