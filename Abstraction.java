@@ -12,9 +12,7 @@ public class Abstraction {
     public static void main(String[] args) {
         Employee s = new Student(1000);
         s.calculateSalary(500);
-        
-        //--------
-        
+        //-----------------------------------------
         Circle2 myCircle = new Circle2(5.0);
         Rectangle2 myRectangle = new Rectangle2(4.0, 6.0);
         System.out.println("Area of Circle: " + myCircle.calculateArea());
@@ -35,7 +33,7 @@ abstract class Employee {
         System.out.println(salary);
     }
 
-    abstract void calculateSalary(int paymentPerHour);
+    abstract void calculateSalary(int paymentPerHour); // // Abstract method for calculateSalary
 }
 
 class Student extends Employee {
@@ -44,17 +42,16 @@ class Student extends Employee {
         super(workingHour);
     }
 
+    @Override
     void calculateSalary(int paymentPerHour) {
         salary = workingHour * paymentPerHour;
         super.displaySalary();
     }
-
 }
 
 //--------------example with interface named Shape2
 interface Shape2 {
-    double calculateArea(); // Abstract method for
-                            // calculating the area
+    double calculateArea(); // Abstract method for calculating the area
 }
 
 // Implement the interface in a class named Circle
